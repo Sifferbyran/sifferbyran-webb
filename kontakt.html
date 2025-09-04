@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt – Sifferbyrån</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {{
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }}
+        header {{
+            background-color: #003366;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }}
+        section {{
+            padding: 1rem;
+        }}
+        .anstallda {{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }}
+        .person {{
+            text-align: center;
+            max-width: 150px;
+        }}
+        .person img {{
+            width: 100%;
+            border-radius: 8px;
+        }}
+        form {{
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }}
+        form label {{
+            margin-top: 1rem;
+        }}
+        form input, form textarea {{
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin-top: 0.3rem;
+        }}
+        form button {{
+            margin-top: 1rem;
+            padding: 0.7rem;
+            background-color: #003366;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }}
+        @media (max-width: 600px) {{
+            .anstallda {{
+                flex-direction: column;
+                align-items: center;
+            }}
+        }}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kontakt – Sifferbyrån</h1>
+    </header>
+    <section>
+        <h2>Våra medarbetare</h2>
+        <div class="anstallda">
+
+            <div class="person">
+                <img src="UploadedImage0.jpg" alt="Anna Ekonomi">
+                <p><strong>Anna Ekonomi</strong><br>Bokföringsspecialist</p>
+            </div>
+    
+            <div class="person">
+                <img src="UploadedImage1.jpg" alt="Johan Rådgivning">
+                <p><strong>Johan Rådgivning</strong><br>Ekonomisk rådgivare</p>
+            </div>
+    
+            <div class="person">
+                <img src="UploadedImage2.jpg" alt="Lisa Lön">
+                <p><strong>Lisa Lön</strong><br>Löneadministratör</p>
+            </div>
+    
+            <div class="person">
+                <img src="UploadedImage3.jpg" alt="Erik Deklaration">
+                <p><strong>Erik Deklaration</strong><br>Deklarationsexpert</p>
+            </div>
+    
+            <div class="person">
+                <img src="UploadedImage4.jpg" alt="Maria Kundkontakt">
+                <p><strong>Maria Kundkontakt</strong><br>Kundansvarig</p>
+            </div>
+    
+        </div>
+        <h2>Boka möte</h2>
+        <form action="https://formspree.io/f/yourformid" method="POST">
+            <label for="namn">Namn:</label>
+            <input type="text" id="namn" name="namn" required>
+
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="datum">Datum:</label>
+            <input type="date" id="datum" name="datum" required>
+
+            <label for="tid">Tid:</label>
+            <input type="time" id="tid" name="tid" required>
+
+            <label for="meddelande">Meddelande:</label>
+            <textarea id="meddelande" name="meddelande" rows="5" required></textarea>
+
+            <button type="submit">Skicka</button>
+        </form>
+    </section>
+</body>
+</html>
