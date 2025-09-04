@@ -8,13 +8,13 @@ body {
 
 header {
   background-color: #003366;
-  color: yellow;
+  color: white;
   padding: 1rem;
   text-align: center;
 }
 
 .logo {
-  max-width: 600px;
+  max-width: 200px;
   margin-bottom: 1rem;
 }
 
